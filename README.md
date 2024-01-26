@@ -2,6 +2,8 @@
 
 Django + Redis + Postgres
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/-h8kBw?referralCode=NC4Tt6)
+
 ### Tailwindcss
 
 - The `jstoolchain` folder includes a tailwindcss setup
@@ -38,3 +40,5 @@ Django + Redis + Postgres
   of `appfolder/static/app_name/css/style.css` (e.g. `users/static/users/css/style.css`)
 - CSRFTRUSTEDORIGINS might be needed and ifso set to the domain name of the website (e.g. `example.com`)
   inside `settings.py`
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/-h8kBw?referralCode=NC4Tt6)
