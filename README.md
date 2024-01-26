@@ -2,7 +2,7 @@
 
 Django + Redis + Postgres
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/-h8kBw?referralCode=NC4Tt6)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/AcACbH?referralCode=NC4Tt6)
 
 ### Tailwindcss
 
@@ -41,4 +41,4 @@ Django + Redis + Postgres
 - CSRFTRUSTEDORIGINS might be needed and ifso set to the domain name of the website (e.g. `example.com`)
   inside `settings.py`
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/-h8kBw?referralCode=NC4Tt6)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/AcACbH?referralCode=NC4Tt6)
