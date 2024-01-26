@@ -32,13 +32,8 @@ Django + Redis + Postgres
   the variables defined in railway
 - To create a superuser install railway cli and run `railway run python manage.py createsuperuser`
 - Split into apps as much as possible (does not make sense early on but will later on)
-- `Templates` folder outside will be used for base / navbar / footer templates and anything that is not app specific
-- Other templates should be inside the app folder with the recommended naming convention
-  of `appfolder/templates/app_name/template_name.html` (e.g. `users/templates/users/login.html`)
-- `static` folder outside will be used for base / navbar / footer css and js files and anything that is not app specific
-- Other static files should be inside the app folder with the recommended naming convention
-  of `appfolder/static/app_name/css/style.css` (e.g. `users/static/users/css/style.css`)
-- CSRFTRUSTEDORIGINS might be needed and ifso set to the domain name of the website (e.g. `example.com`)
-  inside `settings.py`
+- templates and static folders outside are for global templates and static files (use the conventional django way for
+  app
+  specific templates and static files)
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/AcACbH?referralCode=NC4Tt6)
