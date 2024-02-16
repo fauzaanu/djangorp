@@ -2,6 +2,8 @@
 
 Django + Redis + Postgres
 
+A very vanilla way to build with django, using django and django templates as much as possible.
+
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/AcACbH?referralCode=NC4Tt6)
 
 ### Tailwindcss
@@ -16,6 +18,13 @@ Django + Redis + Postgres
 
 - The project template directory includes a folder called `icons` which contains lucide icons ()
 - The idea is to use django template tag of include and add the icons to the templates
+
+### Toasts
+
+- Toasts from https://github.com/talsu/vanilla-toast are included by default
+- any view that sends a context with the keys present on `mysite/templates/toast/toast_body.html` will display a toast
+- Eg: toast_message, toast_error, toast_success
+- For example: After some action is complete a session variable can be set and the view can be redirected to the main page that would display the toast. This page should also delete the session variable so that it can never repeat.
 
 ### Role of Redis
 

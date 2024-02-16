@@ -134,3 +134,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 # Crispy forms settings
 CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
 CRISPY_TEMPLATE_PACK = "tailwind"
+
+# Site Version
+SITE_VERSION = "0.1.0"

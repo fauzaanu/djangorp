@@ -1,0 +1,23 @@
+<script>
+    {% if toast_message %}
+        vanillaToast.show("{{toast_message}}", {duration: 10000, fadeDuration: 500});
+    {% endif %}
+    {% if toast_error %}
+        vanillaToast.error("{{toast_error}}", {duration: 10000, fadeDuration: 500});
+    {% endif %}
+    {% if toast_success %}
+        vanillaToast.success("{{toast_success}}", {duration: 10000, fadeDuration: 500});
+    {% endif %}
+    {% if toast_warning %}
+        vanillaToast.warning("{{toast_warning}}", {duration: 10000, fadeDuration: 500});
+    {% endif %}
+    {% if toast_info %}
+        vanillaToast.info("{{toast_info}}", {duration: 10000, fadeDuration: 500});
+    {% endif %}
+    {% if toast_default %}
+        vanillaToast.default("{{toast_default}}", {duration: 10000, fadeDuration: 500});
+    {% endif %}
+    {% if toast_link %}
+        vanillaToast.link("{{toast_link}}", {duration: 10000, fadeDuration: 500});
+    {% endif %}
+</script>
