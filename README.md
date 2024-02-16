@@ -12,6 +12,11 @@ Django + Redis + Postgres
 - The `tailwind.config.js` file is configured to search for `html` and `py` files
 - `.py` files because forms.py could have tailwindcss classes due to the user of `crispy-forms` with `crispy-tailwind`
 
+### Icon Library
+
+- The project template directory includes a folder called `icons` which contains lucide icons ()
+- The idea is to use django template tag of include and add the icons to the templates
+
 ### Role of Redis
 
 - Redis is used as a cache firstly
@@ -19,16 +24,20 @@ Django + Redis + Postgres
 - Thirdly, it is used as a session store
 
 ### Huey
+
 - Huey is used as a task queue (same as celery, but more lightweight)
 - It is configured to use Redis as a broker and a result store
 - The Huey settings are on the production settings file
 - The `tasks.py` file is used to define tasks (similar to celery's tasks.py file)
 - The decorator `@huey.task` and `@huey.periodic_task` are used to define tasks
 
+### Static and Media Files
+
+- We use whitenoise to serve static files
+- There is no setting for media files, but cloudinary settings are present as comments in the production settings file
+
 ### Important Notes
 
-- Generate migrations from dev environment and commit them to the repo
-- Anything that takes too long to run should be a background task
 - There is no need for a `.env` file to be committed to the repo as the `settings.py` file is configured to read from
   the variables defined in railway
 - To create a superuser install railway cli and run `railway run python manage.py createsuperuser`
