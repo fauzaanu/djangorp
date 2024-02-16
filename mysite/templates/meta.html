@@ -1,0 +1,21 @@
+{% load static %}
+
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="icon" type="image/x-icon" href="{% static 'logo/favicon.ico' %}">
+
+<title>
+    {% block title %}
+    {% endblock %}
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="icon" type="image/x-icon" href="{% static 'favicon/favicon.ico' %}">
+
+{# Force all links in the live preview panel to be opened in a new tab #}
+{% if request.in_preview_panel %}
+    <base target="_blank">
+{% endif %}
+
+{% block extra_css %}
+    {# Override this in templates to add extra stylesheets #}
+{% endblock %}

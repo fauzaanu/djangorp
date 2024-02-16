@@ -3,7 +3,7 @@
     "tailwindcss": "^3.4.1"
   },
   "scripts": {
-    "tww": "tailwindcss -i ../jstoolchain/input.css -o ../static/css/output.css --watch",
-    "twb": "tailwindcss -i ../jstoolchain/input.css -o ../static/css/output.css --minify"
+    "tww": "tailwindcss -i ../jstoolchain/input.css -o ../mysite/static/css/style.css --watch",
+    "twb": "tailwindcss -i ../jstoolchain/input.css -o ../mysite/static/css/style.css --minify"
   }
 }

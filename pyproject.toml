@@ -17,9 +17,8 @@ hiredis = "^2.3.2"
 redis = "^5.0.1"
 django-crispy-forms = "^2.1"
 crispy-tailwind = "^1.0.0"
-celery = "^5.3.6"
-django-celery-results = "^2.5.1"
 python-dotenv = "^1.0.1"
+huey = "^2.5.0"
 
 
 [build-system]

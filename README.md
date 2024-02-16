@@ -15,14 +15,15 @@ Django + Redis + Postgres
 ### Role of Redis
 
 - Redis is used as a cache firstly
-- Secondly, it is used as a message broker for Celery
+- Secondly, it is used to run huey tasks
 - Thirdly, it is used as a session store
 
-### Celery
-
-- Celery is used for background tasks that take a long time to complete.
-- `tasks.py` is where the tasks are defined and they can be called from anywhere in the project
-- `celery.py` is where the celery app is created and configured, explicitly adding the tasks may be required
+### Huey
+- Huey is used as a task queue (same as celery, but more lightweight)
+- It is configured to use Redis as a broker and a result store
+- The Huey settings are on the production settings file
+- The `tasks.py` file is used to define tasks (similar to celery's tasks.py file)
+- The decorator `@huey.task` and `@huey.periodic_task` are used to define tasks
 
 ### Important Notes
 
