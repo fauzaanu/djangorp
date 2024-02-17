@@ -33,8 +33,13 @@ A very vanilla way to build with django, using django and django templates as mu
 - Redis is used as a cache firstly
 - Secondly, it is used to run huey tasks
 - Thirdly, it is used as a session store
+- Compared to running redis on upstash, railway so far seems to be much better. (Needs more testing with multiple
+  projects to be sure)
 
 ### Huey
+
+> Initially we used celery however switching to huey ran the tasks reliably and saved around 1.5GB of RAM on the server
+> which would be a better starting point initially as cost could be a factor.
 
 - Huey is used as a task queue (same as celery, but more lightweight)
 - It is configured to use Redis as a broker and a result store
