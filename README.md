@@ -54,12 +54,9 @@ A very vanilla way to build with django, using django and django templates as mu
 
 ### Important Notes
 
-- There is no need for a `.env` file to be committed to the repo as the `settings.py` file is configured to read from
-  the variables defined in railway
+- Don't commit `.env` file, settings will read from railway environment variables
 - To create a superuser install railway cli and run `railway run python manage.py createsuperuser`
-- Split into apps as much as possible (does not make sense early on but will later on)
-- templates and static folders outside are for global templates and static files (use the conventional django way for
-  app
-  specific templates and static files)
+- Split into apps as much as possible
+- project templates and static folders are inside the project folder rather than outside
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/AcACbH?referralCode=NC4Tt6)
