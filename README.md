@@ -16,7 +16,7 @@ A very vanilla way to build with django, using django and django templates as mu
 
 ### Icon Library
 
-- The project template directory includes a folder called `icons` which contains lucide icons ()
+- The project template directory includes a folder called `icons` which contains lucide icons (https://lucide.dev/)
 - The idea is to use django template tag of include and add the icons to the templates
 
 ### Toasts
