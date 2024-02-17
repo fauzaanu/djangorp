@@ -18,13 +18,15 @@ A very vanilla way to build with django, using django and django templates as mu
 
 - The project template directory includes a folder called `icons` which contains lucide icons (https://lucide.dev/)
 - The idea is to use django template tag of include and add the icons to the templates
+- Example: `{% include 'icons/arrow-right.svg' %}`
 
 ### Toasts
 
 - Toasts from https://github.com/talsu/vanilla-toast are included by default
 - any view that sends a context with the keys present on `mysite/templates/toast/toast_body.html` will display a toast
 - Eg: toast_message, toast_error, toast_success
-- For example: After some action is complete a session variable can be set and the view can be redirected to the main page that would display the toast. This page should also delete the session variable so that it can never repeat.
+- For example: After some action is complete a session variable can be set and the view can be redirected to the main
+  page that would display the toast. This page should also delete the session variable so that it can never repeat.
 
 ### Role of Redis
 
